@@ -53,6 +53,7 @@
 			children = (
 				4410B9D42C839E2C006A6781 /* MessengerAppApp.swift */,
 				4410B9D62C839E2C006A6781 /* ContentView.swift */,
+				4410B9E22C83A055006A6781 /* New Group */,
 				4410B9D82C839E3E006A6781 /* Assets.xcassets */,
 				4410B9DA2C839E3E006A6781 /* Preview Content */,
 			);
@@ -65,6 +66,13 @@
 				4410B9DB2C839E3E006A6781 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4410B9E22C83A055006A6781 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
