@@ -11,14 +11,18 @@
 		4410B9D72C839E2C006A6781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410B9D62C839E2C006A6781 /* ContentView.swift */; };
 		4410B9D92C839E3E006A6781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4410B9D82C839E3E006A6781 /* Assets.xcassets */; };
 		4410B9DC2C839E3E006A6781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4410B9DB2C839E3E006A6781 /* Preview Assets.xcassets */; };
+		4410B9EF2C83A7AD006A6781 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410B9EE2C83A7AD006A6781 /* LoginView.swift */; };
+		44C6CD3E2C83C48E0096E165 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6CD3D2C83C48E0096E165 /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4410B9D12C839E2C006A6781 /* MessengerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4410B9D42C839E2C006A6781 /* MessengerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerAppApp.swift; sourceTree = "<group>"; };
-		4410B9D62C839E2C006A6781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4410B9D62C839E2C006A6781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
 		4410B9D82C839E3E006A6781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4410B9DB2C839E3E006A6781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4410B9EE2C83A7AD006A6781 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "MessengerApp/ Core/Authentication/LoginView.swift"; sourceTree = SOURCE_ROOT; };
+		44C6CD3D2C83C48E0096E165 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +55,11 @@
 		4410B9D32C839E2C006A6781 /* MessengerApp */ = {
 			isa = PBXGroup;
 			children = (
-				4410B9D42C839E2C006A6781 /* MessengerAppApp.swift */,
-				4410B9D62C839E2C006A6781 /* ContentView.swift */,
-				4410B9E22C83A055006A6781 /* New Group */,
+				4410B9E42C83A65E006A6781 /* App */,
+				4410B9E92C83A69E006A6781 /* Extensions */,
+				4410B9E82C83A683006A6781 /* Service */,
+				4410B9E62C83A668006A6781 /*  Core */,
+				4410B9E52C83A667006A6781 /* Model */,
 				4410B9D82C839E3E006A6781 /* Assets.xcassets */,
 				4410B9DA2C839E3E006A6781 /* Preview Content */,
 			);
@@ -68,11 +74,69 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4410B9E22C83A055006A6781 /* New Group */ = {
+		4410B9E42C83A65E006A6781 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4410B9D42C839E2C006A6781 /* MessengerAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4410B9E52C83A667006A6781 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4410B9E62C83A668006A6781 /*  Core */ = {
+			isa = PBXGroup;
+			children = (
+				4410B9EC2C83A701006A6781 /* Root */,
+				4410B9EB2C83A6D8006A6781 /* Authentication */,
+			);
+			path = " Core";
+			sourceTree = "<group>";
+		};
+		4410B9E82C83A683006A6781 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4410B9E92C83A69E006A6781 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4410B9EB2C83A6D8006A6781 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4410B9ED2C83A773006A6781 /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4410B9EC2C83A701006A6781 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4410B9D62C839E2C006A6781 /* ContentView.swift */,
+			);
+			name = Root;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		4410B9ED2C83A773006A6781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4410B9EE2C83A7AD006A6781 /* LoginView.swift */,
+				44C6CD3D2C83C48E0096E165 /* RegistrationView.swift */,
+			);
+			name = View;
+			path = "../Authent/New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4410B9EF2C83A7AD006A6781 /* LoginView.swift in Sources */,
 				4410B9D72C839E2C006A6781 /* ContentView.swift in Sources */,
 				4410B9D52C839E2C006A6781 /* MessengerAppApp.swift in Sources */,
+				44C6CD3E2C83C48E0096E165 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +349,7 @@
 				DEVELOPMENT_TEAM = 7KLFQ5HN5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +379,7 @@
 				DEVELOPMENT_TEAM = 7KLFQ5HN5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
