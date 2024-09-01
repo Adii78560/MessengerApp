@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4406BDCF2C846FAA007EA23F /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406BDCE2C846FAA007EA23F /* InboxView.swift */; };
+		4406BDD22C84727B007EA23F /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406BDD12C84727B007EA23F /* ActiveNowView.swift */; };
+		4406BDD42C8477C6007EA23F /* inboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406BDD32C8477C6007EA23F /* inboxRowView.swift */; };
 		4410B9D52C839E2C006A6781 /* MessengerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410B9D42C839E2C006A6781 /* MessengerAppApp.swift */; };
 		4410B9D72C839E2C006A6781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410B9D62C839E2C006A6781 /* ContentView.swift */; };
 		4410B9D92C839E3E006A6781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4410B9D82C839E3E006A6781 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4406BDCE2C846FAA007EA23F /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		4406BDD12C84727B007EA23F /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
+		4406BDD32C8477C6007EA23F /* inboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inboxRowView.swift; sourceTree = "<group>"; };
 		4410B9D12C839E2C006A6781 /* MessengerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4410B9D42C839E2C006A6781 /* MessengerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerAppApp.swift; sourceTree = "<group>"; };
 		4410B9D62C839E2C006A6781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4406BDCD2C846F83007EA23F /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				4406BDCE2C846FAA007EA23F /* InboxView.swift */,
+				4406BDD32C8477C6007EA23F /* inboxRowView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		4406BDD02C847233007EA23F /* ActiveN */ = {
+			isa = PBXGroup;
+			children = (
+				4406BDD12C84727B007EA23F /* ActiveNowView.swift */,
+			);
+			path = ActiveN;
+			sourceTree = "<group>";
+		};
 		4410B9C82C839E2C006A6781 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +115,8 @@
 		4410B9E62C83A668006A6781 /*  Core */ = {
 			isa = PBXGroup;
 			children = (
+				4406BDD02C847233007EA23F /* ActiveN */,
+				4406BDCD2C846F83007EA23F /* Inbox */,
 				4410B9EC2C83A701006A6781 /* Root */,
 				4410B9EB2C83A6D8006A6781 /* Authentication */,
 			);
@@ -211,6 +236,9 @@
 			files = (
 				4410B9EF2C83A7AD006A6781 /* LoginView.swift in Sources */,
 				4410B9D72C839E2C006A6781 /* ContentView.swift in Sources */,
+				4406BDD42C8477C6007EA23F /* inboxRowView.swift in Sources */,
+				4406BDCF2C846FAA007EA23F /* InboxView.swift in Sources */,
+				4406BDD22C84727B007EA23F /* ActiveNowView.swift in Sources */,
 				4410B9D52C839E2C006A6781 /* MessengerAppApp.swift in Sources */,
 				44C6CD3E2C83C48E0096E165 /* RegistrationView.swift in Sources */,
 			);
